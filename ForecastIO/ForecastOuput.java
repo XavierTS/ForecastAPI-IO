@@ -14,14 +14,14 @@ import com.google.gson.Gson;
 public class ForecastOuput {
 
 	private String apiKey;
-	private float lattitude;
-	private float longitude;
+	private double lattitude;
+	private double longitude;
 	private long time;
 	private String url;
 	private Units unit = Units.auto;
 
 	// Time in Unix Timestamp
-	public ForecastOuput(String apiKey, float lattitude, float longitude,
+	public ForecastOuput(String apiKey, double lattitude, double longitude,
 			long time) {
 		super();
 		this.apiKey = apiKey;
@@ -34,7 +34,7 @@ public class ForecastOuput {
 
 	}
 
-	public ForecastOuput(String apiKey, float lattitude, float longitude) {
+	public ForecastOuput(String apiKey, double lattitude, double longitude) {
 		super();
 		this.apiKey = apiKey;
 		this.lattitude = lattitude;
@@ -160,7 +160,7 @@ public class ForecastOuput {
 		this.apiKey = apiKey;
 	}
 
-	public float getLattitude() {
+	public double getLattitude() {
 		return lattitude;
 	}
 
@@ -168,7 +168,7 @@ public class ForecastOuput {
 		this.lattitude = lattitude;
 	}
 
-	public float getLongitude() {
+	public double getLongitude() {
 		return longitude;
 	}
 
