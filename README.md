@@ -1,4 +1,4 @@
 ForecastAPI-IO
 ==============
 
-Java wrapper for "V2 Forecast API" with google GSON
+Java wrapper for "V2 Forecast API"(Forecast.io) with google GSON
